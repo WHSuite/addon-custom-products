@@ -1,0 +1,49 @@
+{
+    "name": "English",
+    "slug": "en",
+    "is_active": "1",
+    "language_code": "en",
+    "text_direction": "LTR",
+    "addon": "custom_products",
+    "Strings": [
+
+    ],
+    "EmailTemplates": {
+        "custom_product_welcome_email": {
+            "slug": "custom_product_welcome_email",
+            "EmailTemplateTranslation": {
+                "subject": "Thank you for your order",
+                "html_body_default": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p><p>Thank you for purchasing from us. You purchased: {{product.name}}. If you have any problems, please contact us.<\/p>{{{settings.mail.email_signature_html}}}",
+                "html_body": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p><p>Thank you for purchasing from us. You purchased: {{product.name}}. If you have any problems, please contact us.<\/p>{{{settings.mail.email_signature_html}}}",
+                "plaintext_body_default": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nThank you for purchasing from us. You purchased: {{product.name}}. If you have any problems, please contact us.\r\n\r\n{{settings.mail.email_signature_plaintext}}",
+                "plaintext_body": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nThank you for purchasing from us. You purchased: {{product.name}}. If you have any problems, please contact us.\r\n\r\n{{settings.mail.email_signature_plaintext}}"
+            },
+            "name": "Custom Product Welcome Email",
+            "available_tags": "client.first_name,client.last_name,client.company,client.address1,client.address2,client.city,client.state,client.postcode,client.country,client.phone,next_invoice,product.name,product.description,purchase.order_id,purchase.first_payment,purchase.recurring_payment,purchase.next_renewal,purchase.next_invoice,purchase.status"
+        },
+        "custom_product_suspended": {
+            "slug": "custom_product_suspended",
+            "EmailTemplateTranslation": {
+                "subject": "Your software license has been suspended.",
+                "html_body_default": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p><p>Your product has been suspended due to an outstanding balance on your account. Please visit our website to make payment to re-activate your product before it is terminated.<\/p>{{{settings.mail.email_signature_html}}}",
+                "html_body": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p><p>Your product has been suspended due to an outstanding balance on your account. Please visit our website to make payment to re-activate your product before it is terminated.<\/p>{{{settings.mail.email_signature_html}}}",
+                "plaintext_body_default": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nYour product has been suspended due to an outstanding balance on your account. Please visit our website to make payment to re-activate your product before it is terminated.\r\n\r\n{{settings.mail.email_signature_plaintext}}",
+                "plaintext_body": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nYour product has been suspended due to an outstanding balance on your account. Please visit our website to make payment to re-activate your product before it is terminated.\r\n\r\n{{settings.mail.email_signature_plaintext}}"
+            },
+            "name": "Custom Product Suspended",
+            "available_tags": "client.first_name,client.last_name,client.company,client.address1,client.address2,client.city,client.state,client.postcode,client.country,client.phone"
+        },
+        "custom_product_terminated": {
+            "slug": "custom_product_terminated",
+            "EmailTemplateTranslation": {
+                "subject": "Your software license has been terminated",
+                "html_body_default": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p><p>Your product has been terminated due to non-payment. A notice was previusly sent, warning that your product would be terminated if payment was not made.<\/p><p>If you feel you have recieved this email in error, please contact us as soon as possible for assistance.<\/p>{{{settings.mail.email_signature_html}}}",
+                "html_body": "<p>Dear {{client.first_name}} {{client.last_name}},<\/p><p>Your product has been terminated due to non-payment. A notice was previusly sent, warning that your product would be terminated if payment was not made.<\/p><p>If you feel you have recieved this email in error, please contact us as soon as possible for assistance.<\/p>{{{settings.mail.email_signature_html}}}",
+                "plaintext_body_default": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nYour product has been terminated due to non-payment. A notice was previusly sent, warning that your license would be terminated if payment was not made.\r\n\r\nIf you feel you have recieved this email in error, please contact us as soon as possible for assistance.\r\n\r\n{{settings.mail.email_signature_plaintext}}",
+                "plaintext_body": "Dear {{client.first_name}} {{client.last_name}},\r\n\r\nYour product has been terminated due to non-payment. A notice was previusly sent, warning that your product would be terminated if payment was not made.\r\n\r\nIf you feel you have recieved this email in error, please contact us as soon as possible for assistance.\r\n\r\n{{settings.mail.email_signature_plaintext}}"
+            },
+            "name": "Custom Product Terminated",
+            "available_tags": "client.first_name,client.last_name,client.company,client.address1,client.address2,client.city,client.state,client.postcode,client.country,client.phone"
+        }
+    }
+}
