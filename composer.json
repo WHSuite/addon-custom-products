@@ -1,0 +1,12 @@
+{
+    "name": "whsuite/addon-custom-products",
+    "type": "whsuite-addon",
+    "description": "Allow the addition of custom products in WHSuite",
+    "license": "Private",
+    "authors": [
+        {
+            "name": "WHSuite",
+            "email": "info@whsuite.com"
+        }
+    ]
+}
